@@ -10,20 +10,14 @@ This code demonstrates how a gradient descent search may be used to solve the 'L
 
 The code contains a main function called `run`. This function defines a set of parameters used in the gradient descent algorithm including an initial guess of the line slope and y-intercept, the learning rate to use, and the number of iterations to run gradient descent for. 
 
-*Note for choosing 'iterations':*
-
+***Note for choosing 'iterations':***
 Choose number of iterations just greater than i,where delta(change in error) becomes less than some acceptable change in error(e.g.10e-5).
 
-*Note for choosing 'learning_rate(@)':*
-
+***Note for choosing 'learning_rate(@)':***
 Consider following points while choosing 'learning_rate':
-
 	1.If @ is too small, then your Gradient Descent Algo.(GDA) can become slow.
-
 	2.If @ is too big, then your GDA may :
-
 		a)overshoot the minimum
-
 		b)may not converge or may diverge.
 
 There also an emerging method (which I haven’t tried but looks promising) to use learned features to predict learning rates of gradient descent. Go through this [paper](https://arxiv.org/abs/1606.04474) for more details.
@@ -53,6 +47,8 @@ Running...
 Runner completed its job.
 Delta=1.8027214323979024e-05, iterations=270
 After 270 iterations b = 0.037176415932999606, m = 1.478761414262951, error = 112.64579441603475
+
+<img src="https://github.com/pganeshGapps/gradient_descent/blob/master/plot_01.png" width="380">
 ```
 OR
 
@@ -63,6 +59,7 @@ Runner completed its job.
 Delta=1.8393831581420272e-05, iterations=270
 After 270 iterations b = -0.043294679012631294, m = 1.4803430491155023, error = 112.69436722916174
 
+<img src="https://github.com/pganeshGapps/gradient_descent/blob/master/plot_02.png" width="380">
 ```
 
 A more detailed description of this example can be found in following references:
