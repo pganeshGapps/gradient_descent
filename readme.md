@@ -17,7 +17,9 @@ Choose number of iterations just greater than i,where delta(change in error) bec
 ***Note for choosing 'learning_rate(@)':***
 
 Consider following points while choosing 'learning_rate':
+
 	>1.If @ is too small, then your Gradient Descent Algo.(GDA) can become slow.
+
 	>2.If @ is too big, then your GDA may :
 		a)overshoot the minimum
 		b)may not converge or may diverge.
@@ -31,9 +33,7 @@ num_iterations = 1000
 ``` 
 
 Using these parameters a gradient descent search is executed on a sample data set of 100 ponts. 
-Here is a example of the search running for 270 iterations using an initial guess of `m = 0`, `b = 0`, and a learning rate of `0.00005`.
-
-<img src="https://github.com/pganeshGapps/gradient_descent/blob/master/plot_01.png" width="580">
+You can find following an example of the search running for 270 iterations using an initial guess of `m = 0`, `b = 0`, and a learning rate of `0.00005`.
 
 ### Execution
 
