@@ -11,12 +11,14 @@ This code demonstrates how a gradient descent search may be used to solve the 'L
 The code contains a main function called `run`. This function defines a set of parameters used in the gradient descent algorithm including an initial guess of the line slope and y-intercept, the learning rate to use, and the number of iterations to run gradient descent for. 
 
 ***Note for choosing 'iterations':***
+
 Choose number of iterations just greater than i,where delta(change in error) becomes less than some acceptable change in error(e.g.10e-5).
 
 ***Note for choosing 'learning_rate(@)':***
+
 Consider following points while choosing 'learning_rate':
-	1.If @ is too small, then your Gradient Descent Algo.(GDA) can become slow.
-	2.If @ is too big, then your GDA may :
+	>1.If @ is too small, then your Gradient Descent Algo.(GDA) can become slow.
+	>2.If @ is too big, then your GDA may :
 		a)overshoot the minimum
 		b)may not converge or may diverge.
 
@@ -47,9 +49,9 @@ Running...
 Runner completed its job.
 Delta=1.8027214323979024e-05, iterations=270
 After 270 iterations b = 0.037176415932999606, m = 1.478761414262951, error = 112.64579441603475
-
-<img src="https://github.com/pganeshGapps/gradient_descent/blob/master/plot_01.png" width="380">
 ```
+<img src="https://github.com/pganeshGapps/gradient_descent/blob/master/plot_01.png" width="380">
+
 OR
 
 ```
@@ -58,16 +60,14 @@ Running...
 Runner completed its job.
 Delta=1.8393831581420272e-05, iterations=270
 After 270 iterations b = -0.043294679012631294, m = 1.4803430491155023, error = 112.69436722916174
-
-<img src="https://github.com/pganeshGapps/gradient_descent/blob/master/plot_02.png" width="380">
 ```
+<img src="https://github.com/pganeshGapps/gradient_descent/blob/master/plot_02.png" width="380">
 
 A more detailed description of this example can be found in following references:
 
 ### References
+>1.Refer [this](https://arxiv.org/abs/1609.04747) paper on overview of gradient descent optimization algorithms.
 
-1.Refer [this](https://arxiv.org/abs/1609.04747) paper on overview of gradient descent optimization algorithms.
+>2.CS231n [Course material](http://cs231n.github.io/neural-networks-3/) on gradient descent.
 
-2.CS231n [Course material](http://cs231n.github.io/neural-networks-3/) on gradient descent.
-
-3.Chapter 4 (Numerical optimization) and Chapter 8 (Optimization for Deep Learning models) of Deep Learning book.
+>3.Chapter 4 (Numerical optimization) and Chapter 8 (Optimization for Deep Learning models) of Deep Learning book.
