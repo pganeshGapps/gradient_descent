@@ -1,5 +1,7 @@
 ## Gradient Descent Example for Linear Regression
-This example project demonstrates how the [gradient descent](http://en.wikipedia.org/wiki/Gradient_descent) algorithm may be used to solve a [linear regression](http://en.wikipedia.org/wiki/Linear_regression) problem. 
+This example project demonstrates how the [gradient descent](http://en.wikipedia.org/wiki/Gradient_descent) algorithm may be used to solve a [linear regression](http://en.wikipedia.org/wiki/Linear_regression) problem.
+
+<img src="https://github.com/pganeshGapps/gradient_descent/blob/master/grad_standard.png" width="380"> 
 
 ### Code Requirements
  Python ([version 3.5](https://www.python.org/doc/versions/) or higher will work). 
@@ -7,6 +9,8 @@ This example project demonstrates how the [gradient descent](http://en.wikipedia
 
 ### Description
 This code demonstrates how a gradient descent search may be used to solve the 'Linear Regression' problem of fitting a line to a set of points. In this problem, we wish to model a set of points using a line. The line model is defined by two parameters - the line's slope `m`, and y-intercept `b`. Gradient descent attemps to find the best values for these parameters, subject to an error function.
+
+Please note that, since we are using a convex cost function here in linear regression; whenever we converge, it will be global optimum.
 
 The code contains a main function called `run`. This function defines a set of parameters used in the gradient descent algorithm including an initial guess of the line slope and y-intercept, the learning rate to use, and the number of iterations to run gradient descent for. 
 
@@ -18,11 +22,13 @@ Choose number of iterations just greater than i,where delta(change in error) bec
 
 Consider following points while choosing 'learning_rate':
 
-	>1.If @ is too small, then your Gradient Descent Algo.(GDA) can become slow.
+	1.If @ is too small, then your Gradient Descent Algo.(GDA) can become slow.
 
-	>2.If @ is too big, then your GDA may :
+	2.If @ is too big, then your GDA may :
 		a)overshoot the minimum
 		b)may not converge or may diverge.
+
+<img src="https://github.com/pganeshGapps/gradient_descent/blob/master/learningrates.jpeg" width="380"> 
 
 There also an emerging method (which I haven’t tried but looks promising) to use learned features to predict learning rates of gradient descent. Go through this [paper](https://arxiv.org/abs/1606.04474) for more details.
 
